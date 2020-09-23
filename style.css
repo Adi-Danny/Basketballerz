@@ -2,6 +2,28 @@ body
 {
     Font-size:12px;
     font-family:arial;
-    background-color: darksalmon;
-    color:blue;
-};
+    
+}
+
+#container
+{
+    width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+    border: 2px black;
+}
+
+header
+{
+
+}
+
+main
+{
+
+}
+
+footer
+{
+
+}
