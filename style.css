@@ -154,3 +154,10 @@ input[type=password]::placeholder
 {
     background-color: lightblue;
 }
+footer a:link {
+    text-decoration: none;
+    color:white;
+}
+footer a:visited{
+    color:white;
+}
