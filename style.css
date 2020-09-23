@@ -22,7 +22,8 @@ header
 section
 {
     text-align: center;
-    height:500px;
+    height:300px;
+    margin-top:60px;
 }
 
 footer
@@ -30,4 +31,37 @@ footer
     text-align:center;
     font-size:20px;
     color:white;
+    text-decoration: underline;
+}
+
+input[type=text] 
+{
+    width: 250px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=password]
+{
+    width: 250px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=submit]
+{
+    width: 125px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+header a
+{
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
 }
