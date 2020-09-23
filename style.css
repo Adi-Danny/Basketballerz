@@ -19,6 +19,20 @@ header
     color:white;
 }
 
+header:hover
+{
+    color: lightblue;
+}
+
+
+
+header a
+{
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 section
 {
     text-align: center;
@@ -57,11 +71,34 @@ input[type=submit]
     margin: 8px 0;
     box-sizing: border-box;
     cursor: pointer;
+    font-size: 15px;
+    font-family: 'times new roman';
+    font-weight: bold;
 }
 
-header a
+input[type=text]:focus 
 {
-    color:white;
-    text-decoration: none;
-    cursor: pointer;
+    background-color: lightblue;
+}
+
+input[type=password]:focus 
+{
+    background-color: lightblue;
+}
+
+input[type=submit]:hover 
+{
+    background-color: lightblue;
+}
+
+input[type=text]::placeholder
+{
+    text-align:center;
+    font-style:italic;
+}
+
+input[type=password]::placeholder
+{
+    text-align:center;
+    font-style:italic;
 }
