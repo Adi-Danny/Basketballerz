@@ -127,9 +127,6 @@ input[type=password]::placeholder
     font-style:italic;
 }
 
-#send:hover
-{
-    background-color: lightgreen;
 .link_button 
 {
     -webkit-border-radius: 4px;
