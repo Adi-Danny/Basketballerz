@@ -24,22 +24,19 @@
                     <button type="reset"  id="reset_button" value="Clear">Reset</button><br /><br />
                     <p class='radioform'>Position: </p>
                     <form method="post">
-                        <div class="radio-group">
-                            <input type="radio" id="point_guard" name="selector"><label for="point_guard">Point Guard</label>
-                            <input type="radio" id="shooting_guard" name="selector"><label for="shooting_guard">Shooting Guard</label>
-                            <input type="radio" id="small_forward" name="selector"><label for="small_forward">Small Forward</label>
-                            <input type="radio" id="power_forward" name="selector"><label for="power_forward">Power Forward</label>
-                            <input type="radio" id="center" name="selector"><label for="center">Center</label>
+                        <div class="radio_group">
+                            <input type="radio" id="point_guard" name="selector" onclick="photo('pg')"><label for="point_guard">Point Guard</label>
+                            <input type="radio" id="shooting_guard" name="selector" onclick="photo('sg')"><label for="shooting_guard">Shooting Guard</label>
+                            <input type="radio" id="small_forward" name="selector" onclick="photo('sf')"><label for="small_forward">Small Forward</label>
+                            <input type="radio" id="power_forward" name="selector" onclick="photo('pf')"><label for="power_forward">Power Forward</label>
+                            <input type="radio" id="center" name="selector" onclick="photo('c')"><label for="center">Center</label>
                          </div>
                      </form><br />
                     <p class='radioform'>Character picture: </p>
                     <form method="post">
-                        <div class="radio-group">
-                            <img src="img/lebronn.jpg" />
-                            <img src="img/hardenn.jpg" /><br />
-                            <input type="radio" id="lebron_img" name="selector">
-                            <input type="radio" id="harden_img" name="selector">
-                         </div>
+                        <div id="radio_group_profile_picture">
+                            
+                        </div>
                      </form><br />
                     <input type="submit"  value="Send" id='send'/>
                     <a href="index.html" class="link_button">Cancel</a> 
@@ -50,4 +47,36 @@
             </footer>
         </div>
     </Body>
+
+    <script type="text/javascript">
+        var pg_img = document.createElement("pg_img");
+            sg_img = document.createElement("sg_img");
+            // sf_img = document.createElement("sf_img");
+            // pf_img = document.createElement("pf_img");
+            // c_img = document.createElement("c_img");
+
+        pg_img.src = "img/hardenn.jpg";
+        sg_img.src = "img/lebronn.jpg";
+        // sf_img.src = "img/hardenn.jpg";
+        // pf_img.src = "img/hardenn.jpg";
+        // c_img.src = "img/hardenn.jpg";
+
+        profile_picture = document.getElementById('radio_group_profile_picture');
+
+        function photo(x)
+        {
+            if (x=='pg')
+                profile_picture.appendChild(pg_img);
+            else if(x=='sg')
+                profile_picture.appendChild(pg_img);
+            else if(x=='sf')
+                profile_picture.innerHTML = "You chose SF";
+            else if(x=='pf')
+                profile_picture.innerHTML = "You chose PF";
+            else if(x=='c')
+                profile_picture.innerHTML = "You chose C";
+
+        }
+
+    </script>
 </HTML>
