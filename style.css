@@ -197,6 +197,10 @@ label {
   padding: 5px 20px;
 }
 
+input[type=radio]:hover + label{
+    color:lightcoral;
+  }
+
 input[type=radio]:checked + label{
   color:red;
 }
