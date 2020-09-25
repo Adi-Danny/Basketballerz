@@ -1,0 +1,69 @@
+body
+{
+    background-image: url(img/background.jpg);
+    background-attachment: fixed; 
+}
+
+#container
+{
+    width:1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header
+{
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    font-size: 50px;
+    height: 150px;
+    color:white;
+    background-color: darkslategray;
+}
+
+header a
+{
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section
+{
+    text-align: center;
+    height: 500px;
+    width: 500px;
+    margin-top: 60px;
+    color:white;
+    background-color: red;
+    float: left;
+}
+
+aside
+{
+    background-color: yellow;
+    height: 500px;
+    width: 500px;
+    margin-top: 60px;
+    float: left;
+}
+
+footer
+{
+    text-align: center;
+    font-size: 20px;
+    color:white;
+    text-decoration: underline;
+}
+
+footer a:link {
+    text-decoration: none;
+    color:white;
+}
+
+footer a:visited{
+    color:white;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+

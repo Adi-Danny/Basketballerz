@@ -20,11 +20,6 @@ header
     color:white;
 }
 
-header:hover
-{
-    color: lightblue;
-}
-
 header a
 {
     color:white;
@@ -235,4 +230,9 @@ p.radioform
     padding: 8px 12px;
     text-decoration: none;
     cursor: pointer;
+}
+
+#reset_button:hover
+{
+    background-color: lightblue;
 }
