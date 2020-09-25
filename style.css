@@ -1,6 +1,7 @@
 body
 {
     background-image: url(img/background.jpg);
+    background-attachment: fixed; 
 }
 
 #container
@@ -36,15 +37,15 @@ header a
 section
 {
     text-align: center;
-    height:500px;
-    margin-top:60px;
+    height: 500px;
+    margin-top: 60px;
     color:white;
 }
 
 footer
 {
-    text-align:center;
-    font-size:20px;
+    text-align: center;
+    font-size: 20px;
     color:white;
     text-decoration: underline;
 }
@@ -58,6 +59,14 @@ input[type=text]
 }
 
 input[type=password]
+{
+    width: 250px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=number]
 {
     width: 250px;
     padding: 12px 20px;
@@ -79,7 +88,7 @@ input[type=submit]
     color: #FFF;
     padding: 7px 12px;
     text-decoration: none;
-    cursor:pointer;
+    cursor: pointer;
     height: 35px;
     width: 70px;
 }
@@ -98,7 +107,7 @@ input[type=reset]
     color: #FFF;
     padding: 7px 12px;
     text-decoration: none;
-    cursor:pointer;
+    cursor: pointer;
     height: 35px;
     width: 70px;
 }
@@ -124,14 +133,20 @@ input[type=reset]:hover
 
 input[type=text]::placeholder
 {
-    text-align:center;
-    font-style:italic;
+    text-align: center;
+    font-style: italic;
 }
 
 input[type=password]::placeholder
 {
-    text-align:center;
-    font-style:italic;
+    text-align: center;
+    font-style: italic;
+}
+
+input[type=number]::placeholder
+{
+    text-align: center;
+    font-style: italic;
 }
 
 .link_button 
@@ -154,16 +169,15 @@ input[type=password]::placeholder
 {
     background-color: lightblue;
 }
+
 footer a:link {
     text-decoration: none;
     color:white;
 }
+
 footer a:visited{
     color:white;
 }
-
-
-
 
 input[type=radio] {
   position: absolute;
@@ -203,3 +217,19 @@ p.radioform
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+#reset_button
+{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #20538D;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: #4479BA;
+    color: #FFF;
+    padding: 8px 12px;
+    text-decoration: none;
+}
