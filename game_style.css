@@ -16,7 +16,7 @@ header
     font-family: 'Permanent Marker', cursive;
     text-align: center;
     font-size: 50px;
-    height: 150px;
+    height: 90px;
     color:white;
     background-color: darkslategray;
 }
@@ -31,9 +31,8 @@ header a
 section
 {
     text-align: center;
-    height: 500px;
-    width: 500px;
-    margin-top: 60px;
+    height: 800px;
+    width: 800px;
     color:white;
     background-color: red;
     float: left;
@@ -42,9 +41,8 @@ section
 aside
 {
     background-color: yellow;
-    height: 500px;
-    width: 500px;
-    margin-top: 60px;
+    height: 800px;
+    width: 200px;
     float: left;
 }
 
@@ -62,6 +60,52 @@ footer a:link {
 }
 
 footer a:visited{
+    color:white;
+}
+
+#horizontal_menu
+{
+    height: 37px;
+    width: 1000px;
+    float: left;
+    color:white;
+    background-color:blue;
+}
+
+.horizontal_menu_option
+{
+    float: left;
+    min-width: 50px;
+    height: 25px;
+    font-size: 18px;
+    padding: 10px;
+    border-right: 2px dotted #444444;
+}
+
+.horizontal_menu_option:hover{
+    background-color: black;
+    cursor: pointer;
+    color:white;
+}
+
+.vertical_menu_option
+{
+    font-size: 18px;
+    height: 25px;
+    padding: 10px;
+    border-bottom: 2px dotted #444444;
+}
+
+.vertical_menu_option:hover
+{
+    background-color: #f36742;
+    color:white;
+    cursor: pointer;
+}
+
+#logout_button
+{
+    text-decoration: none;
     color:white;
 }
 
