@@ -6,7 +6,7 @@ body
 
 #container
 {
-    width:1000px;
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -30,33 +30,27 @@ header a
 section
 {
     text-align: center;
-    height: 796px;
+    height: 730px;
     width: 796px;
     color:white;
     background-color:rgb(0, 0, 0,0.8);
     float: left;
     border: 3px solid orange;
-    
-  
     border-radius: 20px;
-    
 }
 
-p{
-   padding:20px;
-
+p
+{
+   padding: 20px;
 }
 
 aside
 {
- 
-    height: 796px;
+    height: 730px;
     width: 196px;
     float: left;
- 
     border-radius: 20px;
     color:white;
-    
 }
 
 footer
@@ -65,76 +59,79 @@ footer
     text-align: right;
     font-size: 20px;
     color:white;
-  
     font-style: oblique;
- 
+    border-radius: 20px;
+    border-right: 3px solid orange;
+    border-bottom: 3px solid orange;
 }
 
-footer a:link {
+footer a:link 
+{
     text-decoration: none;
     color:white;
 }
 
-footer a:visited{
+footer a:visited
+{
     color:white;
 }
 
 #horizontal_menu
 {
-    text-align:center;
+    text-align: center;
     height: 37px;
     width: 1000px;
     float: left;
     color:white;
-    
-
 }
 
 .horizontal_menu_option
 {
-    
     display: inline;
-    float:center;
     min-width: 50px;
-    height: 25px;
     font-size: 20px;
     padding: 10px;
     border-right: 3px solid orange;
     border-radius: 30px;
 }
 
-.horizontal_menu_option:hover{
+.horizontal_menu_option:hover
+{
     color:orange;
     cursor: pointer;
-    opacity:70%;
+    opacity: 70%;
     border-radius: 20px;
-    text-shadow:1px 1px grey;
+    text-shadow: 1px 1px grey;
 }
 
 .vertical_menu_option
 {
-    font-size: 18px;
+    font-size: 20px;
     height: 25px;
     padding: 20px;
     border-bottom: 2px groove orange;
-    border-radius:20px;
-    text-align:center;
+    border-radius: 20px;
+    text-align: center;
 }
 
 .vertical_menu_option:hover
 {
     color: orange;
     cursor: pointer;
-  
-    opacity:70%;
+    opacity: 70%;
     border-radius: 20px;
-    text-shadow:1px 1px grey;
+    text-shadow: 1px 1px grey;
 }
 
 #logout_button
 {
     text-decoration: none;
     color:white;
+}
+
+#logout_button:hover
+{
+    color: orange;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
