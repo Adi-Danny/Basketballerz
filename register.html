@@ -22,17 +22,17 @@
                     <input type="text" name="mail" placeholder="E-mail"><br />
                     <input type="number" name="number" placeholder="Number (0-99)" min="0" max="99"/><br />
                     <button type="reset"  id="reset_button" value="Clear">Reset</button><br /><br />
-                    <p class='radioform'>Position: </p>
+                    <p class="radioform">Position: </p>
                     <form method="post">
                         <div class="radio_group">
-                            <input type="radio" id="point_guard" name="selector" onclick="photo('pg')"><label for="point_guard">Point Guard</label>
-                            <input type="radio" id="shooting_guard" name="selector" onclick="photo('sg')"><label for="shooting_guard">Shooting Guard</label>
-                            <input type="radio" id="small_forward" name="selector" onclick="photo('sf')"><label for="small_forward">Small Forward</label>
-                            <input type="radio" id="power_forward" name="selector" onclick="photo('pf')"><label for="power_forward">Power Forward</label>
-                            <input type="radio" id="center" name="selector" onclick="photo('c')"><label for="center">Center</label>
+                            <input type="radio" id="point_guard" name="selector" onclick="photo('pg'); document.getElementById('radio_group_profile_picture').style.display='inline-block'; document.getElementById('profile_picture_text').style.display='inline';"><label for="point_guard">Point Guard</label>
+                            <input type="radio" id="shooting_guard" name="selector" onclick="photo('sg'); document.getElementById('radio_group_profile_picture').style.display='inline-block'; document.getElementById('profile_picture_text').style.display='inline';"><label for="shooting_guard">Shooting Guard</label>
+                            <input type="radio" id="small_forward" name="selector" onclick="photo('sf'); document.getElementById('radio_group_profile_picture').style.display='inline-block'; document.getElementById('profile_picture_text').style.display='inline';"><label for="small_forward">Small Forward</label>
+                            <input type="radio" id="power_forward" name="selector" onclick="photo('pf'); document.getElementById('radio_group_profile_picture').style.display='inline-block'; document.getElementById('profile_picture_text').style.display='inline';"><label for="power_forward">Power Forward</label>
+                            <input type="radio" id="center" name="selector" onclick="photo('c'); document.getElementById('radio_group_profile_picture').style.display='inline-block'; document.getElementById('profile_picture_text').style.display='inline';"><label for="center">Center</label>
                          </div>
                      </form><br />
-                    <p class='radioform'>Character picture: </p>
+                    <p class="radioform" id="profile_picture_text">Character picture: </p>
                     <form method="post">
                         <div id="radio_group_profile_picture">
                             
