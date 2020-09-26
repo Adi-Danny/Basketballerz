@@ -16,18 +16,18 @@
             </header>
             <aside>
                 <p class="radioform" id="profile_picture_text">Character picture: </p>
-                <form method="post">
-                    <div id="radio_group_profile_picture">
-                        <div id="character_stats">
-                        <br /><br /><b><i><u>Starting stats: </u></i></b><br /><br />
-                        Strength:<br /> 
-                        Agility:<br /> 
-                        Accuracy:<br />  
-                        Stamina:<br /><br />
-                        <b><i>Strong side: </i></b><br /><br />
-                        3pt shot<br />
+                    <form method="post">
+                        <div id="radio_group_profile_picture">
+                            <div id="character_stats">
+                            <br /><br /><b><i><u>Starting stats: </u></i></b><br /><br />
+                            Strength: <b><span style="color:red;" id="strength"></span></b><br /> 
+                            Agility: <b><span style="color:red;" id="agility"></span></b><br /> 
+                            Accuracy: <b><span style="color:red;" id="accuracy"></span></b><br /> 
+                            Stamina: <b><span style="color:red;" id="stamina"></span></b><br /><br /> 
+                            <b><i>Strong side: </i></b><br /><br />
+                            <b><span style="color:blueviolet" id="strong_side"></span></b><br />
+                            </div>
                         </div>
-                    </div>
                  </form><br />
             </aside>
             <section>
@@ -49,7 +49,9 @@
                          </div><br /><br />
                          <input type="submit"  value="Send" id='send'/> 
                 <a href="index.html" class="link_button">Cancel</a> 
+                 
                      </form><br />
+                </form>
                 
                    
             </section>
@@ -62,7 +64,11 @@
     <script type="text/javascript">
         var img = document.createElement("img");
         profile_picture = document.getElementById('radio_group_profile_picture')
-        strength = document.getElementById('str');
+        str = document.getElementById('strength');
+        agi = document.getElementById('agility');
+        acc = document.getElementById('accuracy');
+        sta = document.getElementById('stamina');
+        str_side = document.getElementById('strong_side');
 
         function photo(x)
         {
@@ -70,26 +76,51 @@
             {
                 img.src = "img/stephenn.jpg";
                 profile_picture.appendChild(img);
+                str.innerHTML = "5";
+                agi.innerHTML = "5";
+                acc.innerHTML = "5";
+                sta.innerHTML = "5";
+                str_side.innerHTML = "3pt shot";
             }
             else if(x=='sg')
             {
                 img.src = "img/hardenn.jpg";
                 profile_picture.appendChild(img);
+                str.innerHTML = "5";
+                agi.innerHTML = "5";
+                acc.innerHTML = "5";
+                sta.innerHTML = "5";
+                str_side.innerHTML = "Mid-range shot";
             }
             else if(x=='sf')
             {
                 img.src = "img/lebronn.jpg";
-                profile_picture.appendChild(img);   
+                profile_picture.appendChild(img);
+                str.innerHTML = "5";
+                agi.innerHTML = "5";
+                acc.innerHTML = "5";
+                sta.innerHTML = "5";
+                str_side.innerHTML = "Driving layups and dunks";   
             }
             else if(x=='pf')
             {
                 img.src = "img/anthonyy.jpg";
-                profile_picture.appendChild(img);    
+                profile_picture.appendChild(img);
+                str.innerHTML = "5";
+                agi.innerHTML = "5";
+                acc.innerHTML = "5";
+                sta.innerHTML = "5";
+                str_side.innerHTML = "Points in the paint";    
             }
             else if(x=='c')
             {
                 img.src = "img/jokicc.jpg";
-                profile_picture.appendChild(img);       
+                profile_picture.appendChild(img);
+                str.innerHTML = "5";
+                agi.innerHTML = "5";
+                acc.innerHTML = "5";
+                sta.innerHTML = "5";
+                str_side.innerHTML = "Blocks";       
             }
         }
 
