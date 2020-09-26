@@ -6,7 +6,7 @@ body
 
 #container
 {
-    width:1000px;
+    width:1300px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -248,5 +248,15 @@ p.radioform
 
 #profile_picture_text
 {
-    display:none;
+    display: none;
+}
+
+#character_stats
+{
+    background-color: black;
+    padding: 5px 20px;
+    width: 120px;
+    float: right;
+    text-align: center;
+    margin-top: 20px;
 }

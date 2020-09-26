@@ -35,7 +35,15 @@
                     <p class="radioform" id="profile_picture_text">Character picture: </p>
                     <form method="post">
                         <div id="radio_group_profile_picture">
-                            
+                            <div id="character_stats">
+                            <br /><br /><b><i><u>Starting stats: </u></i></b><br /><br />
+                            Strength:<br /> 
+                            Agility:<br /> 
+                            Accuracy:<br />  
+                            Stamina:<br /><br />
+                            <b><i>Strong side: </i></b><br /><br />
+                            3pt shot<br />
+                            </div>
                         </div>
                      </form><br />
                     <input type="submit"  value="Send" id='send'/>
@@ -50,7 +58,8 @@
 
     <script type="text/javascript">
         var img = document.createElement("img");
-        profile_picture = document.getElementById('radio_group_profile_picture');
+        profile_picture = document.getElementById('radio_group_profile_picture')
+        strength = document.getElementById('str');
 
         function photo(x)
         {
