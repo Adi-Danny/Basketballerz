@@ -6,7 +6,7 @@ body
 
 #container
 {
-    width:1300px;
+    width:1600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -29,6 +29,7 @@ header a
 
 section
 {
+    
     text-align: center;
     height: 900px;
     margin-top: 60px;
@@ -37,11 +38,20 @@ section
 
 footer
 {
+    position:relative;
     text-align: center;
     font-size: 20px;
     color:white;
     text-decoration: underline;
 }
+
+aside{
+    
+    position:fixed;
+    float:left;
+    
+}
+
 
 input[type=text] 
 {
@@ -211,6 +221,7 @@ input[type=radio]:checked + label
     display: none;
     border-radius: 10px;
     background-color: black;
+    border: 1px solid white;
     
 }
 
@@ -259,4 +270,6 @@ p.radioform
     float: right;
     text-align: center;
     margin-top: 20px;
+    color:red;
+    
 }
