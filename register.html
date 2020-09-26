@@ -49,33 +49,36 @@
     </Body>
 
     <script type="text/javascript">
-        var pg_img = document.createElement("pg_img");
-            sg_img = document.createElement("sg_img");
-            // sf_img = document.createElement("sf_img");
-            // pf_img = document.createElement("pf_img");
-            // c_img = document.createElement("c_img");
-
-        pg_img.src = "img/hardenn.jpg";
-        sg_img.src = "img/lebronn.jpg";
-        // sf_img.src = "img/hardenn.jpg";
-        // pf_img.src = "img/hardenn.jpg";
-        // c_img.src = "img/hardenn.jpg";
-
+        var img = document.createElement("img");
         profile_picture = document.getElementById('radio_group_profile_picture');
 
         function photo(x)
         {
             if (x=='pg')
-                profile_picture.appendChild(pg_img);
+            {
+                img.src = "img/stephenn.jpg";
+                profile_picture.appendChild(img);
+            }
             else if(x=='sg')
-                profile_picture.appendChild(pg_img);
+            {
+                img.src = "img/hardenn.jpg";
+                profile_picture.appendChild(img);
+            }
             else if(x=='sf')
-                profile_picture.innerHTML = "You chose SF";
+            {
+                img.src = "img/lebronn.jpg";
+                profile_picture.appendChild(img);   
+            }
             else if(x=='pf')
-                profile_picture.innerHTML = "You chose PF";
+            {
+                img.src = "img/anthonyy.jpg";
+                profile_picture.appendChild(img);    
+            }
             else if(x=='c')
-                profile_picture.innerHTML = "You chose C";
-
+            {
+                img.src = "img/jokicc.jpg";
+                profile_picture.appendChild(img);       
+            }
         }
 
     </script>
