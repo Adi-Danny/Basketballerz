@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz');
 body
 {
     background-image: url(img/background.jpg);
-    background-attachment: fixed; 
+    background-attachment: fixed;
+    font-family: 'Yanone Kaffeesatz', sans-serif; 
 }
 
 #container
@@ -30,7 +32,7 @@ header a
 section
 {
     text-align: center;
-    height: 900px;
+    height: 632px;
     margin-top: 60px;
     color:white;
 }
@@ -71,7 +73,7 @@ input::placeholder
 .link_button 
 {
     min-width: 50px;
-    font-size: 20px;
+    font-size: 23px;
     padding: 10px;
     border-right: 3px solid orange;
     border-radius: 30px;
@@ -79,6 +81,7 @@ input::placeholder
     color:white;
     background-color:black;
     opacity: 80%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 .link_button:hover
@@ -126,6 +129,7 @@ input[type=radio]:checked + label
     display: inline-block;
     border-radius: 10px;
     background-color: black;
+    font-size: 20px;
 }
 
 #radio_group_profile_picture 
@@ -141,7 +145,7 @@ input[type=radio]:checked + label
 
 p.radioform
 {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     color:white;
     text-shadow: 0 0 3px red, 0 0 5px blue;
@@ -163,4 +167,5 @@ p.radioform
     text-align: center;
     margin-top: 20px;
     color:white;
+    font-size: 20px;
 }

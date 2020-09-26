@@ -19,11 +19,11 @@
                     <form method="post">
                         <div id="radio_group_profile_picture">
                             <div id="character_stats">
-                            <br /><br /><b><i><u>Starting stats: </u></i></b><br /><br />
-                            Strength: <b><span style="color:red;" id="strength"></span></b><br /> 
-                            Agility: <b><span style="color:red;" id="agility"></span></b><br /> 
-                            Accuracy: <b><span style="color:red;" id="accuracy"></span></b><br /> 
-                            Stamina: <b><span style="color:red;" id="stamina"></span></b><br /><br /> 
+                            <br /><b><i>Starting stats: </i></b><br /><br />
+                            Strength: <span style="color:orange;" id="strength"></span> / 100<br /> 
+                            Agility: <span style="color:orange;" id="agility"></span> / 100<br /> 
+                            Accuracy: <span style="color:orange;" id="accuracy"></span> / 100<br /> 
+                            Stamina: <span style="color:orange;" id="stamina"></span> / 100<br /><br /> 
                             <b><i>Strong side: </i></b><br /><br />
                             <b><span style="color:orange" id="strong_side"></span></b><br />
                             </div>
@@ -36,7 +36,7 @@
                     <input type="password" name="password" placeholder="Password"/><br />
                     <input type="password" name="password_confirmation" placeholder="Confirm password"/><br />
                     <input type="text" name="mail" placeholder="E-mail"><br />
-                    <input type="number" name="number" placeholder="Number (0-99)" min="0" max="99"/><br /><br />
+                    <input type="number" name="number" placeholder="Number on jersey (0-99)" min="0" max="99"/><br /><br />
                     <p class="radioform">Position: </p>
                     <form method="post">
                         <div class="radio_group">
@@ -45,7 +45,7 @@
                             <input type="radio" id="small_forward" name="selector" onclick="photo('sf'); document.getElementById('radio_group_profile_picture').style.display='inline-block'; document.getElementById('profile_picture_text').style.display='inline';"><label for="small_forward">Small Forward</label>
                             <input type="radio" id="power_forward" name="selector" onclick="photo('pf'); document.getElementById('radio_group_profile_picture').style.display='inline-block'; document.getElementById('profile_picture_text').style.display='inline';"><label for="power_forward">Power Forward</label>
                             <input type="radio" id="center" name="selector" onclick="photo('c'); document.getElementById('radio_group_profile_picture').style.display='inline-block'; document.getElementById('profile_picture_text').style.display='inline';"><label for="center">Center</label>
-                         </div><br /><br /><br />
+                         </div><br /><br /><br /><br /><br />
                          <a href="index.html" class="link_button">Send</a> 
                          <a href="index.html" class="link_button">Cancel</a><br /><br />
                          <button type="reset"  class="link_button" value="Clear" onclick="document.getElementById('radio_group_profile_picture').style.display='none'; document.getElementById('profile_picture_text').style.display='none';">Reset</button><br /><br /> 
@@ -73,50 +73,50 @@
             {
                 img.src = "img/stephenn.jpg";
                 profile_picture.appendChild(img);
-                str.innerHTML = "1/100";
-                agi.innerHTML = "6/100";
-                acc.innerHTML = "5/100";
-                sta.innerHTML = "3/100";
+                str.innerHTML = " 1 ";
+                agi.innerHTML = " 6 ";
+                acc.innerHTML = " 5 ";
+                sta.innerHTML = " 3 ";
                 str_side.innerHTML = "3pt shot";
             }
             else if(x=='sg')
             {
                 img.src = "img/hardenn.jpg";
                 profile_picture.appendChild(img);
-                str.innerHTML = "2/100";
-                agi.innerHTML = "4/100";
-                acc.innerHTML = "6/100";
-                sta.innerHTML = "3/100";
+                str.innerHTML = " 2 ";
+                agi.innerHTML = " 4 ";
+                acc.innerHTML = " 6 ";
+                sta.innerHTML = " 3 ";
                 str_side.innerHTML = "Mid-range shot";
             }
             else if(x=='sf')
             {
                 img.src = "img/lebronn.jpg";
                 profile_picture.appendChild(img);
-                str.innerHTML = "2/100";
-                agi.innerHTML = "6/100";
-                acc.innerHTML = "3/100";
-                sta.innerHTML = "4/100";
+                str.innerHTML = " 2 ";
+                agi.innerHTML = " 6 ";
+                acc.innerHTML = " 3 ";
+                sta.innerHTML = " 4 ";
                 str_side.innerHTML = "Driving layups and dunks";   
             }
             else if(x=='pf')
             {
                 img.src = "img/anthonyy.jpg";
                 profile_picture.appendChild(img);
-                str.innerHTML = "7/100";
-                agi.innerHTML = "2/100";
-                acc.innerHTML = "3/100";
-                sta.innerHTML = "3/100";
+                str.innerHTML = " 7 ";
+                agi.innerHTML = " 2 ";
+                acc.innerHTML = " 3 ";
+                sta.innerHTML = " 3 ";
                 str_side.innerHTML = "Points in the paint";    
             }
             else if(x=='c')
             {
                 img.src = "img/jokicc.jpg";
                 profile_picture.appendChild(img);
-                str.innerHTML = "9/100";
-                agi.innerHTML = "1/100";
-                acc.innerHTML = "3/100";
-                sta.innerHTML = "2/100";
+                str.innerHTML = " 9 ";
+                agi.innerHTML = " 1 ";
+                acc.innerHTML = " 3 ";
+                sta.innerHTML = " 2 ";
                 str_side.innerHTML = "Blocks";       
             }
         }

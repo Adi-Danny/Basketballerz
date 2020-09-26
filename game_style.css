@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz');
 body
 {
     background-image: url(img/background.jpg);
-    background-attachment: fixed; 
+    background-attachment: fixed;
+    font-family: 'Yanone Kaffeesatz', sans-serif; 
 }
 
 #container
@@ -37,6 +39,7 @@ section
     float: left;
     border: 3px solid orange;
     border-radius: 20px;
+    font-size: 20px;
 }
 
 p
@@ -89,7 +92,7 @@ footer a:visited
 {
     display: inline;
     min-width: 50px;
-    font-size: 20px;
+    font-size: 23px;
     padding: 10px;
     border-right: 3px solid orange;
     border-radius: 30px;
@@ -106,7 +109,7 @@ footer a:visited
 
 .vertical_menu_option
 {
-    font-size: 20px;
+    font-size: 23px;
     height: 25px;
     padding: 20px;
     border-bottom: 2px groove orange;

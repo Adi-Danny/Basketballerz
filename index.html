@@ -20,9 +20,9 @@
                     <input type="password" name="password" placeholder="Password" /><br /><br />
                     <a href="game.html" class="link_button">Login</a>
                     <a href="register.html" class="link_button">Register</a><br /><br /><br />
-                    <button class="link_button" onclick="show_information()">About the game</button>
-                    <div id="about"></div>
                 </form>
+                <button class="link_button" onclick="show_information()">About the game</button><br /><br /><br /><br />
+                <div id="about">Basketballerz is a basketball browser game written by Adrian and Daniel.<br /><br /> Create your basketball player the way you like, choose your position on the court, create a team with friends and join the league!<br /><br /> Train hard, level up, boost your stats, and become the best basketball player in the league!</div>
             </section>
             <footer>
                <a href="https://github.com/Adi-Danny"> Basketballerz - basketball browser game written by Adi-Danny industries. All rights reserved. &copy;</a>
@@ -32,7 +32,7 @@
     <script type="text/javascript">
         function show_information()
         {
-            document.getElementById('about').innerHTML = "XDDD"
+            document.getElementById('about').style.display="inline-block";
         }
     </script>
 </HTML>

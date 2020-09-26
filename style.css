@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz');
 body
 {
     background-image: url(img/background.jpg);
-    background-attachment: fixed; 
+    background-attachment: fixed;
+    font-family: 'Yanone Kaffeesatz', sans-serif; 
 }
 
 #container
@@ -30,7 +32,7 @@ header a
 section
 {
     text-align: center;
-    height: 600px;
+    height: 632px;
     margin-top: 60px;
     color:white;
 }
@@ -84,7 +86,7 @@ input[type=password]::placeholder
 .link_button 
 {
     min-width: 50px;
-    font-size: 20px;
+    font-size: 23px;
     padding: 10px;
     border-right: 3px solid orange;
     border-radius: 30px;
@@ -92,6 +94,7 @@ input[type=password]::placeholder
     color:white;
     background-color:black;
     opacity: 80%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 .link_button:hover
@@ -112,6 +115,24 @@ footer a:link
 footer a:visited
 {
     color:white;
+}
+
+#about
+{
+    display: none;
+    text-align: center;
+    color:white;
+    background-color:rgb(0, 0, 0,0.8);
+    border: 3px solid orange;
+    border-radius: 20px;
+    padding: 15px;
+    width: 500px;
+    font-size: 23px;
+}
+
+button
+{
+    border: none;
 }
 
 
