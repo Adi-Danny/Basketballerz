@@ -36,8 +36,7 @@
                     <input type="password" name="password" placeholder="Password"/><br />
                     <input type="password" name="password_confirmation" placeholder="Confirm password"/><br />
                     <input type="text" name="mail" placeholder="E-mail"><br />
-                    <input type="number" name="number" placeholder="Number (0-99)" min="0" max="99"/><br />
-                    <button type="reset"  id="reset_button" value="Clear" onclick="document.getElementById('radio_group_profile_picture').style.display='none'; document.getElementById('profile_picture_text').style.display='none';">Reset</button><br /><br />
+                    <input type="number" name="number" placeholder="Number (0-99)" min="0" max="99"/><br /><br />
                     <p class="radioform">Position: </p>
                     <form method="post">
                         <div class="radio_group">
@@ -48,7 +47,8 @@
                             <input type="radio" id="center" name="selector" onclick="photo('c'); document.getElementById('radio_group_profile_picture').style.display='inline-block'; document.getElementById('profile_picture_text').style.display='inline';"><label for="center">Center</label>
                          </div><br /><br /><br />
                          <a href="index.html" class="link_button">Send</a> 
-                         <a href="index.html" class="link_button">Cancel</a> 
+                         <a href="index.html" class="link_button">Cancel</a><br /><br />
+                         <button type="reset"  class="link_button" value="Clear" onclick="document.getElementById('radio_group_profile_picture').style.display='none'; document.getElementById('profile_picture_text').style.display='none';">Reset</button><br /><br /> 
                      </form><br />
                 </form>
             </section>

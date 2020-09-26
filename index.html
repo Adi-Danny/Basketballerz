@@ -19,7 +19,9 @@
                     <input type="text" name="username" placeholder="Username" /><br />
                     <input type="password" name="password" placeholder="Password" /><br /><br />
                     <a href="game.html" class="link_button">Login</a>
-                    <a href="register.html" class="link_button">Register</a>
+                    <a href="register.html" class="link_button">Register</a><br /><br /><br />
+                    <button class="link_button" onclick="show_information()">About the game</button>
+                    <div id="about"></div>
                 </form>
             </section>
             <footer>
@@ -27,4 +29,10 @@
             </footer>
         </div>
     </Body>
+    <script type="text/javascript">
+        function show_information()
+        {
+            document.getElementById('about').innerHTML = "XDDD"
+        }
+    </script>
 </HTML>

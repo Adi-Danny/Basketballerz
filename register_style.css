@@ -29,7 +29,6 @@ header a
 
 section
 {
-    
     text-align: center;
     height: 900px;
     margin-top: 60px;
@@ -50,8 +49,7 @@ aside
     float: left;
 }
 
-
-input[type=text] 
+input
 {
     width: 250px;
     padding: 12px 20px;
@@ -59,49 +57,12 @@ input[type=text]
     box-sizing: border-box;
 }
 
-input[type=password]
-{
-    width: 250px;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-}
-
-input[type=number]
-{
-    width: 250px;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-}
-
-input[type=text]:focus 
+input:focus 
 {
     background-color: lightblue;
 }
 
-input[type=password]:focus 
-{
-    background-color: lightblue;
-}
-input[type=number]:focus 
-{
-    background-color: lightblue;
-}
-
-input[type=text]::placeholder
-{
-    text-align: center;
-    font-style: italic;
-}
-
-input[type=password]::placeholder
-{
-    text-align: center;
-    font-style: italic;
-}
-
-input[type=number]::placeholder
+input::placeholder
 {
     text-align: center;
     font-style: italic;
@@ -116,6 +77,8 @@ input[type=number]::placeholder
     border-radius: 30px;
     text-decoration: none;
     color:white;
+    background-color:black;
+    opacity: 80%;
 }
 
 .link_button:hover
@@ -178,33 +141,13 @@ input[type=radio]:checked + label
 
 p.radioform
 {
-    font-size:20px;
+    font-size: 20px;
     font-weight: bold;
     color:white;
     text-shadow: 0 0 3px red, 0 0 5px blue;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-
-#reset_button
-{
-    min-width: 50px;
-    font-size: 20px;
-    padding: 10px;
-    border-right: 3px solid orange;
-    border-radius: 30px;
-    text-decoration: none;
-    color:white;
-}
-
-#reset_button:hover
-{
-    color:orange;
-    cursor: pointer;
-    opacity: 70%;
-    border-radius: 20px;
-    text-shadow: 1px 1px grey;
-}
 
 #profile_picture_text
 {
