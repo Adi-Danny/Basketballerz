@@ -1,5 +1,5 @@
 <!doctype HTML>
-<HTML lang="pl">
+<HTML>
     <Head>
         <title>Basketballerz Official</title>
         <meta charset="utf-8" />
@@ -8,6 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1" />
         <link rel="stylesheet" href="style.css" type="text/css" />
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <script src="js/jquery-3.5.1.min.js"></script>
     </Head>
     <Body>
         <div id="container">
@@ -21,7 +22,7 @@
                     <a href="game.html" class="link_button">Login</a>
                     <a href="register.html" class="link_button">Register</a><br /><br /><br />
                 </form>
-                <button class="link_button" onclick="show_information()">About the game</button><br /><br /><br /><br />
+                <button id="about_button" class="link_button">About the game</button><br /><br /><br /><br />
                 <div id="about">Basketballerz is a basketball browser game written by Adrian and Daniel.<br /><br /> Create your basketball player the way you like, choose your position on the court, create a team with friends and join the league!<br /><br /> Train hard, level up, boost your stats, and become the best basketball player in the league!</div>
             </section>
             <footer>
@@ -29,10 +30,11 @@
             </footer>
         </div>
     </Body>
-    <script type="text/javascript">
-        function show_information()
-        {
-            document.getElementById('about').style.display="inline-block";
-        }
+    <script>
+        $(document).ready(function(){
+            $("#about_button").click(function(){
+                $("#about").fadeToggle();
+            });
+        });
     </script>
 </HTML>
