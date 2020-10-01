@@ -8,6 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1" />
         <link rel="stylesheet" href="game_style.css" type="text/css" />
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <script src="js/jquery-3.5.1.min.js"></script>
     </Head>
     <Body>
         <div id="container">
@@ -15,21 +16,42 @@
                 Basketballerz
             </header>
             <div id="horizontal_menu">
-                <div class="horizontal_menu_option">Home</div>
-			    <div class="horizontal_menu_option">Ranking</div>
-                <div class="horizontal_menu_option">Options</div>
+                <div id="home_button" class="horizontal_menu_option">Home</div>
+			    <div id="ranking_button" class="horizontal_menu_option">Ranking</div>
                 <div class="horizontal_menu_option"><a href="index.html" id="logout_button">Log out</a></div>
             </div>
             <aside>
-                <div class="vertical_menu_option">Character</div>
-			    <div class="vertical_menu_option">Clothes</div>
-			    <div class="vertical_menu_option">League</div>
-			    <div class="vertical_menu_option">Team</div>
-			    <div class="vertical_menu_option">Training</div>
-			    <div class="vertical_menu_option">Options</div>
+                <div id="character_button" class="vertical_menu_option">Character</div>
+			    <div id="clothes_button" class="vertical_menu_option">Clothes</div>
+			    <div id="league_button" class="vertical_menu_option">League</div>
+			    <div id="team_button" class="vertical_menu_option">Team</div>
+			    <div id="training_button" class="vertical_menu_option">Training</div>
+			    <div id="options_button" class="vertical_menu_option">Options</div>
             </aside>
             <section>
-                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of L</p>
+                <div id="welcome">
+                    <br /><br />Welcome to the game!<br /><br />
+                    Choose your action in the menu bar on the left.
+                    <img src="media/lebron.gif" style="margin-top: 50px; border-radius: 20px;"/>
+                </div>
+                <div id="character">
+                    <div id="character_photo">
+                        <br /><b>Czekoladowy_Brodaty_Koszykarz_1337</b><br /><br />
+                        <img src="img/hardenn.jpg" />
+                    </div>
+                    <br /><b><i>Stats: </i></b><br /><br />
+                    Strength: <span style="color:orange;" id="strength"></span> / 100<br /> 
+                    Agility: <span style="color:orange;" id="agility"></span> / 100<br /> 
+                    Accuracy: <span style="color:orange;" id="accuracy"></span> / 100<br /> 
+                    Stamina: <span style="color:orange;" id="stamina"></span> / 100<br /><br /> 
+                    <b><i>Strong side: </i></b><br /><br />
+                    <b><span style="color:orange" id="strong_side"></span></b><br />
+                </div>
+                <div id="clothes">Clothes</div>
+                <div id="league">League</div>
+                <div id="team">Team</div>
+                <div id="training">Training</div>
+                <div id="options">Options</div>
             </section>
             <div style="clear:both;"></div>
             <footer>
@@ -37,4 +59,104 @@
             </footer>
         </div>
     </Body>
+    <script>
+        $(document).ready(function(){
+            $("#character_button").click(function(){
+            if($("#welcome").css("display")=='block')
+                $("#welcome").hide('slow');
+            else if($("#clothes").css("display")=='block')
+                $("#clothes").hide('slow');
+            else if($("#league").css("display")=='block')
+                $("#league").hide('slow');
+            else if($("#team").css("display")=='block')
+                $("#team").hide('slow');
+            else if($("#training").css("display")=='block')
+                $("#training").hide('slow');
+            else if($("#options").css("display")=='block')
+                $("#options").hide('slow');
+            $("#character").show('slow');
+            })
+
+            $("#clothes_button").click(function(){
+            if($("#welcome").css("display")=='block')
+                $("#welcome").hide('slow');
+            else if($("#character").css("display")=='block')
+                $("#character").hide('slow');
+            else if($("#league").css("display")=='block')
+                $("#league").hide('slow');
+            else if($("#team").css("display")=='block')
+                $("#team").hide('slow');
+            else if($("#training").css("display")=='block')
+                $("#training").hide('slow');
+            else if($("#options").css("display")=='block')
+                $("#options").hide('slow');
+            $("#clothes").show('slow');
+            })
+
+            $("#league_button").click(function(){
+            if($("#welcome").css("display")=='block')
+                $("#welcome").hide('slow');
+            else if($("#clothes").css("display")=='block')
+                $("#clothes").hide('slow');
+            else if($("#character").css("display")=='block')
+                $("#character").hide('slow');
+            else if($("#team").css("display")=='block')
+                $("#team").hide('slow');
+            else if($("#training").css("display")=='block')
+                $("#training").hide('slow');
+            else if($("#options").css("display")=='block')
+                $("#options").hide('slow');
+            $("#league").show('slow');
+            })
+
+            $("#team_button").click(function(){
+            if($("#welcome").css("display")=='block')
+                $("#welcome").hide('slow');
+            else if($("#clothes").css("display")=='block')
+                $("#clothes").hide('slow');
+            else if($("#league").css("display")=='block')
+                $("#league").hide('slow');
+            else if($("#character").css("display")=='block')
+                $("#character").hide('slow');
+            else if($("#training").css("display")=='block')
+                $("#training").hide('slow');
+            else if($("#options").css("display")=='block')
+                $("#options").hide('slow');
+            $("#team").show('slow');
+            })
+
+            $("#training_button").click(function(){
+            if($("#welcome").css("display")=='block')
+                $("#welcome").hide('slow');
+            else if($("#clothes").css("display")=='block')
+                $("#clothes").hide('slow');
+            else if($("#league").css("display")=='block')
+                $("#league").hide('slow');
+            else if($("#team").css("display")=='block')
+                $("#team").hide('slow');
+            else if($("#character").css("display")=='block')
+                $("#character").hide('slow');
+            else if($("#options").css("display")=='block')
+                $("#options").hide('slow');
+            $("#training").show('slow');
+            })
+
+            $("#options_button").click(function(){
+            if($("#welcome").css("display")=='block')
+                $("#welcome").hide('slow');
+            else if($("#clothes").css("display")=='block')
+                $("#clothes").hide('slow');
+            else if($("#league").css("display")=='block')
+                $("#league").hide('slow');
+            else if($("#team").css("display")=='block')
+                $("#team").hide('slow');
+            else if($("#training").css("display")=='block')
+                $("#training").hide('slow');
+            else if($("#character").css("display")=='block')
+                $("#character").hide('slow');
+            $("#options").show('slow');
+            })
+            })
+         
+    </script>
 </HTML>

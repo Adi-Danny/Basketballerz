@@ -137,5 +137,52 @@ footer a:visited
     color: orange;
 }
 
+#welcome
+{
+    font-size: 45px;
+}
+
+#character
+{
+    padding: 5px 20px;
+    width: 250px;
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    margin: auto;
+    display: none;
+}
+
+#character_photo
+{
+    padding: 20px;
+    text-align: center;
+}
+
+#clothes
+{
+    display:none;
+}
+
+#league
+{
+    display:none;
+}
+
+#team
+{
+    display:none;
+}
+
+#training
+{
+    display:none;
+}
+
+#options
+{
+    display:none;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
