@@ -36,15 +36,17 @@
                 <div id="character">
                     <div id="character_photo">
                         <br /><b>Czekoladowy_Brodaty_Koszykarz_1337</b><br /><br />
-                        <img src="img/hardenn.jpg" />
+                        <img src="img/hardenn.jpg" style="border-radius: 20px;"/>
                     </div>
-                    <br /><b><i>Stats: </i></b><br /><br />
+                    <b><i>Stats: </i></b><br /><br />
                     Strength: <span style="color:orange;" id="strength"></span> / 100<br /> 
                     Agility: <span style="color:orange;" id="agility"></span> / 100<br /> 
                     Accuracy: <span style="color:orange;" id="accuracy"></span> / 100<br /> 
                     Stamina: <span style="color:orange;" id="stamina"></span> / 100<br /><br /> 
                     <b><i>Strong side: </i></b><br /><br />
-                    <b><span style="color:orange" id="strong_side"></span></b><br />
+                    <b><span style="color:orange" id="strong_side"></span></b><br /><br /><br />
+                    <div class="experience_bar" data-label="0%" style="--width:0;"></div>
+                    <div id="overall"><i>Overall:</i> <span style="color:orange; font-weight:bold;">99</span></div>
                 </div>
                 <div id="clothes">Clothes</div>
                 <div id="league">League</div>
@@ -91,6 +93,11 @@
                 $("section > div:not(#options)").hide('fast');
                 $("#options").show('slow');
             });
+
+            $("#home_button").click(function(){
+                $("section > div:not(#welcome)").hide('fast');
+                $("#welcome").show('slow');
+            })
 
         })
          

@@ -139,7 +139,7 @@ input[type=radio]:checked + label
 {
     border: solid ;
     display: inline-block;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: black;
     font-size: 20px;
     -webkit-touch-callout: none; 
@@ -154,7 +154,7 @@ input[type=radio]:checked + label
 {
     border: solid ;
     display: none;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: black;
     border: 2px solid white;
     padding: 15px;
