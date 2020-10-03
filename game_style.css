@@ -20,6 +20,12 @@ header
     font-size: 50px;
     height: 90px;
     color:white;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
 }
 
 header a
@@ -96,6 +102,12 @@ footer a:visited
     padding: 10px;
     border-right: 3px solid orange;
     border-radius: 30px;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
 }
 
 .horizontal_menu_option:hover
@@ -115,6 +127,12 @@ footer a:visited
     border-bottom: 2px groove orange;
     border-radius: 20px;
     text-align: center;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
 }
 
 .vertical_menu_option:hover

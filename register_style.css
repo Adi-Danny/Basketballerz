@@ -20,6 +20,12 @@ header
     font-size: 50px;
     height: 150px;
     color:white;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
 }
 
 header a
@@ -82,6 +88,12 @@ input::placeholder
     background-color:black;
     opacity: 80%;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
 }
 
 .link_button:hover
@@ -130,6 +142,12 @@ input[type=radio]:checked + label
     border-radius: 10px;
     background-color: black;
     font-size: 20px;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
 }
 
 #radio_group_profile_picture 
@@ -141,6 +159,12 @@ input[type=radio]:checked + label
     border: 2px solid white;
     padding: 15px;
     height: 299px;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
 }
 
 p.radioform
@@ -149,6 +173,12 @@ p.radioform
     font-weight: bold;
     color:white;
     text-shadow: 0 0 3px red, 0 0 5px blue;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
@@ -156,6 +186,12 @@ p.radioform
 #profile_picture_text
 {
     display: none;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
 }
 
 #character_stats
@@ -168,4 +204,10 @@ p.radioform
     margin-top: 20px;
     color:white;
     font-size: 20px;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
 }

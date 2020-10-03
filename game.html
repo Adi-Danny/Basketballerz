@@ -31,7 +31,6 @@
             <section>
                 <div id="welcome">
                     <br /><br />Welcome to the game!<br /><br />
-                    Choose your action in the menu bar on the left.
                     <img src="media/lebron.gif" style="margin-top: 50px; border-radius: 20px;"/>
                 </div>
                 <div id="character">
@@ -60,103 +59,40 @@
         </div>
     </Body>
     <script>
+
         $(document).ready(function(){
+            
             $("#character_button").click(function(){
-            if($("#welcome").css("display")=='block')
-                $("#welcome").hide('slow');
-            else if($("#clothes").css("display")=='block')
-                $("#clothes").hide('slow');
-            else if($("#league").css("display")=='block')
-                $("#league").hide('slow');
-            else if($("#team").css("display")=='block')
-                $("#team").hide('slow');
-            else if($("#training").css("display")=='block')
-                $("#training").hide('slow');
-            else if($("#options").css("display")=='block')
-                $("#options").hide('slow');
-            $("#character").show('slow');
-            })
+                $("section > div:not(#character)").hide('fast');
+                $("#character").show('slow');
+            });
 
             $("#clothes_button").click(function(){
-            if($("#welcome").css("display")=='block')
-                $("#welcome").hide('slow');
-            else if($("#character").css("display")=='block')
-                $("#character").hide('slow');
-            else if($("#league").css("display")=='block')
-                $("#league").hide('slow');
-            else if($("#team").css("display")=='block')
-                $("#team").hide('slow');
-            else if($("#training").css("display")=='block')
-                $("#training").hide('slow');
-            else if($("#options").css("display")=='block')
-                $("#options").hide('slow');
-            $("#clothes").show('slow');
-            })
+                $("section > div:not(#clothes)").hide('fast');
+                $("#clothes").show('slow');
+            });
 
             $("#league_button").click(function(){
-            if($("#welcome").css("display")=='block')
-                $("#welcome").hide('slow');
-            else if($("#clothes").css("display")=='block')
-                $("#clothes").hide('slow');
-            else if($("#character").css("display")=='block')
-                $("#character").hide('slow');
-            else if($("#team").css("display")=='block')
-                $("#team").hide('slow');
-            else if($("#training").css("display")=='block')
-                $("#training").hide('slow');
-            else if($("#options").css("display")=='block')
-                $("#options").hide('slow');
-            $("#league").show('slow');
-            })
+                $("section > div:not(#league)").hide('fast');
+                $("#league").show('slow');
+            });
 
             $("#team_button").click(function(){
-            if($("#welcome").css("display")=='block')
-                $("#welcome").hide('slow');
-            else if($("#clothes").css("display")=='block')
-                $("#clothes").hide('slow');
-            else if($("#league").css("display")=='block')
-                $("#league").hide('slow');
-            else if($("#character").css("display")=='block')
-                $("#character").hide('slow');
-            else if($("#training").css("display")=='block')
-                $("#training").hide('slow');
-            else if($("#options").css("display")=='block')
-                $("#options").hide('slow');
-            $("#team").show('slow');
-            })
+                $("section > div:not(#team)").hide('fast');
+                $("#team").show('slow');
+            });
 
             $("#training_button").click(function(){
-            if($("#welcome").css("display")=='block')
-                $("#welcome").hide('slow');
-            else if($("#clothes").css("display")=='block')
-                $("#clothes").hide('slow');
-            else if($("#league").css("display")=='block')
-                $("#league").hide('slow');
-            else if($("#team").css("display")=='block')
-                $("#team").hide('slow');
-            else if($("#character").css("display")=='block')
-                $("#character").hide('slow');
-            else if($("#options").css("display")=='block')
-                $("#options").hide('slow');
-            $("#training").show('slow');
-            })
+                $("section > div:not(#training)").hide('fast');
+                $("#training").show('slow');
+            });
 
             $("#options_button").click(function(){
-            if($("#welcome").css("display")=='block')
-                $("#welcome").hide('slow');
-            else if($("#clothes").css("display")=='block')
-                $("#clothes").hide('slow');
-            else if($("#league").css("display")=='block')
-                $("#league").hide('slow');
-            else if($("#team").css("display")=='block')
-                $("#team").hide('slow');
-            else if($("#training").css("display")=='block')
-                $("#training").hide('slow');
-            else if($("#character").css("display")=='block')
-                $("#character").hide('slow');
-            $("#options").show('slow');
-            })
-            })
+                $("section > div:not(#options)").hide('fast');
+                $("#options").show('slow');
+            });
+
+        })
          
     </script>
 </HTML>
