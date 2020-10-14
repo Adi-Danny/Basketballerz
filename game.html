@@ -17,7 +17,8 @@
             </header>
             <div id="horizontal_menu">
                 <div id="home_button" class="horizontal_menu_option">Home</div>
-			    <div id="ranking_button" class="horizontal_menu_option">Ranking</div>
+                <div id="ranking_button" class="horizontal_menu_option">Ranking</div>
+                <div id="options_button" class="horizontal_menu_option">Options</div>
                 <div class="horizontal_menu_option"><a href="index.html" id="logout_button">Log out</a></div>
             </div>
             <aside>
@@ -25,8 +26,8 @@
 			    <div id="clothes_button" class="vertical_menu_option">Clothes</div>
 			    <div id="league_button" class="vertical_menu_option">League</div>
 			    <div id="team_button" class="vertical_menu_option">Team</div>
-			    <div id="training_button" class="vertical_menu_option">Training</div>
-			    <div id="options_button" class="vertical_menu_option">Options</div>
+                <div id="training_button" class="vertical_menu_option">Training</div>
+			    <div id="shop_button" class="vertical_menu_option">Shop</div>
             </aside>
             <section>
                 <div id="welcome">
@@ -48,11 +49,60 @@
                     <div class="experience_bar" data-label="0%" style="--width:0;"></div>
                     <div id="overall"><i>Overall:</i> <span style="color:orange; font-weight:bold;">99</span></div>
                 </div>
-                <div id="clothes">Clothes</div>
-                <div id="league">League</div>
+                <div id="clothes">
+                    <br />
+                    <div class="item"><b>Headbands:</b> <br /><br />
+                        <img src="items/black_jordan_headband.jpg" />Black Jordan Headband<br /><br />
+                        Strength: <span style="color:orange;" id="black_jordan_headband_strength">0</span> / 100<br /> 
+                        Agility: <span style="color:orange;" id="black_jordan_headband_agility">0</span> / 100<br /> 
+                        Accuracy: <span style="color:orange;" id="black_jordan_headband_accuracy">0</span> / 100<br /> 
+                        Stamina: <span style="color:orange;" id="black_jordan_headband_stamina">0</span> / 100<br /><br /> 
+                    </div><br />
+                    <div class="item"><b>Jerseys:</b>  <br /><br />
+                        <img src="items/kobebryant_nba_jersey.jpg" />Kobe Bryant NBA Jersey<br /><br />
+                        Strength: <span style="color:orange;" id="black_jordan_headband_strength">0</span> / 100<br /> 
+                        Agility: <span style="color:orange;" id="black_jordan_headband_agility">0</span> / 100<br /> 
+                        Accuracy: <span style="color:orange;" id="black_jordan_headband_accuracy">0</span> / 100<br /> 
+                        Stamina: <span style="color:orange;" id="black_jordan_headband_stamina">0</span> / 100<br /><br /> 
+                    </div><br />
+                    <div class="item"><b>Sleeves:</b>  <br /><br />
+                        <img src="items/black_jordan_sleeve.jpg" />Black Jordan Sleeve<br /><br />
+                        Strength: <span style="color:orange;" id="black_jordan_headband_strength">0</span> / 100<br /> 
+                        Agility: <span style="color:orange;" id="black_jordan_headband_agility">0</span> / 100<br /> 
+                        Accuracy: <span style="color:orange;" id="black_jordan_headband_accuracy">0</span> / 100<br /> 
+                        Stamina: <span style="color:orange;" id="black_jordan_headband_stamina">0</span> / 100<br /><br />
+                    </div><br /> 
+                    <div class="item"><b>Shorts:</b>  <br /><br />
+                        <img src="items/black_jordan_shorts.jpg" />Black Jordan Shorts<br /><br />
+                        Strength: <span style="color:orange;" id="black_jordan_headband_strength">0</span> / 100<br /> 
+                        Agility: <span style="color:orange;" id="black_jordan_headband_agility">0</span> / 100<br /> 
+                        Accuracy: <span style="color:orange;" id="black_jordan_headband_accuracy">0</span> / 100<br /> 
+                        Stamina: <span style="color:orange;" id="black_jordan_headband_stamina">0</span> / 100<br /><br />
+                    </div><br />
+                    <div class="item"><b>Shoes:</b>  <br /><br />
+                        <img src="items/kobe_bryant_shoes.jpg" />Kobe Bryant Shoes<br /><br />
+                        Strength: <span style="color:orange;" id="black_jordan_headband_strength">0</span> / 100<br /> 
+                        Agility: <span style="color:orange;" id="black_jordan_headband_agility">0</span> / 100<br /> 
+                        Accuracy: <span style="color:orange;" id="black_jordan_headband_accuracy">0</span> / 100<br /> 
+                        Stamina: <span style="color:orange;" id="black_jordan_headband_stamina">0</span> / 100<br /><br />
+                    </div><br />
+                </div>
+                <div id="league">
+                    <br /><span id="league_logo">Basketballerz League</span><br /><br />
+                    <div class="item"><b>Standings:</b> <br /><br />
+
+                    </div><br />
+                    <div class="item"><b>Teams:</b> <br /><br />
+
+                    </div>
+                </div>
                 <div id="team">Team</div>
                 <div id="training">Training</div>
+                <div id="shop">
+                    
+                </div>
                 <div id="options">Options</div>
+                <div id="ranking">Ranking</div>
             </section>
             <div style="clear:both;"></div>
             <footer>
@@ -99,6 +149,15 @@
                 $("#welcome").show('slow');
             })
 
+            $("#shop_button").click(function(){
+                $("section > div:not(#shop)").hide('fast');
+                $("#shop").show('slow');
+            })
+
+            $("#ranking_button").click(function(){
+                $("section > div:not(#ranking)").hide('fast');
+                $("#ranking").show('slow');
+            })
         })
          
     </script>
