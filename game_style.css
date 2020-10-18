@@ -244,14 +244,14 @@ footer a:visited
     text-align: center;
 }
 
-.item
+.item 
 {
     background-color: black;
     border-radius: 1.5em;
     color:white;
     border: 2px solid orange;
     width: 640px;
-    height: 200px;
+    height: auto;
     margin: auto;
 }
 
@@ -260,6 +260,11 @@ footer a:visited
     float: left;
     margin-left: 30px;
     border-radius: 1.5em;
+}
+
+.item b
+{
+    color:orange;
 }
 
 #clothes
@@ -274,6 +279,13 @@ footer a:visited
 }
 
 #shop
+{
+    display: none;
+    overflow-y: scroll;
+    height: 730px;
+}
+
+#shop::-webkit-scrollbar
 {
     display: none;
 }
@@ -291,5 +303,40 @@ footer a:visited
     color:white;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+#coins_balance
+{
+    float: left;
+    font-size: 25px;
+    color: orange;
+    font-weight: bold;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
 
+.equip_button
+{
+    background-color: black;
+    border-radius: 1.5em;
+    border: 2px solid orange;
+    height: 20px;
+    width: 50px;
+    padding: 2px;
+    margin-left: 75px;
+    cursor: pointer;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+.equip_button:hover
+{
+    background-color: orange;
+    color:black;
+}
