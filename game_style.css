@@ -194,7 +194,14 @@ footer a:visited
 
 #training
 {
-    display:none;
+    display: none;
+    height: 700px;
+    overflow-y: scroll;
+}
+
+#training::-webkit-scrollbar
+{
+    display: none;
 }
 
 #options
