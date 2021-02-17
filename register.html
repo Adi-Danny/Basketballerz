@@ -6,7 +6,7 @@
         <meta name="description" content="Official Basketballerz Game Site" />
         <meta name="keywords" content="Basketball, Game, Basketballerz, Kochamdaniela, NBA" />
         <meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1" />
-        <link rel="stylesheet" href="register_style.css" type="text/css" />
+        <link rel="stylesheet" href="css/register.css" type="text/css" />
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     </Head>
     <Body>
@@ -40,15 +40,15 @@
                     <p class="radioform">Position: </p>
                     <form method="post">
                         <div class="radio_group">
-                            <input type="radio" id="point_guard" name="selector"  onclick="photo('pg'); document.getElementById('radio_group_profile_picture').style.display='inline-block'; document.getElementById('profile_picture_text').style.display='inline';"><label for="point_guard">Point Guard</label>
-                            <input type="radio" id="shooting_guard" name="selector" onclick="photo('sg'); document.getElementById('radio_group_profile_picture').style.display='inline-block'; document.getElementById('profile_picture_text').style.display='inline';"><label for="shooting_guard">Shooting Guard</label>
-                            <input type="radio" id="small_forward" name="selector" onclick="photo('sf'); document.getElementById('radio_group_profile_picture').style.display='inline-block'; document.getElementById('profile_picture_text').style.display='inline';"><label for="small_forward">Small Forward</label>
-                            <input type="radio" id="power_forward" name="selector" onclick="photo('pf'); document.getElementById('radio_group_profile_picture').style.display='inline-block'; document.getElementById('profile_picture_text').style.display='inline';"><label for="power_forward">Power Forward</label>
-                            <input type="radio" id="center" name="selector" onclick="photo('c'); document.getElementById('radio_group_profile_picture').style.display='inline-block'; document.getElementById('profile_picture_text').style.display='inline';"><label for="center">Center</label>
+                            <input type="radio" id="point_guard" name="selector"  onclick="show_position_info('pg');"><label for="point_guard">Point Guard</label>
+                            <input type="radio" id="shooting_guard" name="selector" onclick="show_position_info('sg');"><label for="shooting_guard">Shooting Guard</label>
+                            <input type="radio" id="small_forward" name="selector" onclick="show_position_info('sf');"><label for="small_forward">Small Forward</label>
+                            <input type="radio" id="power_forward" name="selector" onclick="show_position_info('pf');"><label for="power_forward">Power Forward</label>
+                            <input type="radio" id="center" name="selector" onclick="show_position_info('c');"><label for="center">Center</label>
                          </div><br /><br /><br /><br /><br />
                          <a href="index.html" class="link_button">Send</a> 
                          <a href="index.html" class="link_button">Cancel</a><br /><br />
-                         <button type="reset"  class="link_button" value="Clear" onclick="document.getElementById('radio_group_profile_picture').style.display='none'; document.getElementById('profile_picture_text').style.display='none';">Reset</button><br /><br /> 
+                         <button type="reset"  class="link_button" value="Clear" onclick="clear_form();">Reset</button><br /><br /> 
                      </form><br />
                 </form>
             </section>
@@ -57,70 +57,5 @@
             </footer>
         </div>
     </Body>
-
-    <script type="text/javascript">
-        var img = document.createElement("img");
-        img.style["border-radius"] = "20px";
-        profile_picture = document.getElementById('radio_group_profile_picture')
-        str = document.getElementById('strength');
-        agi = document.getElementById('agility');
-        acc = document.getElementById('accuracy');
-        sta = document.getElementById('stamina');
-        str_side = document.getElementById('strong_side');
-
-        function photo(x)
-        {
-            if (x=='pg')
-            {
-                img.src = "img/stephenn.jpg";
-                profile_picture.appendChild(img);
-                str.innerHTML = " 1 ";
-                agi.innerHTML = " 6 ";
-                acc.innerHTML = " 5 ";
-                sta.innerHTML = " 3 ";
-                str_side.innerHTML = "3pt shot";
-            }
-            else if(x=='sg')
-            {
-                img.src = "img/hardenn.jpg";
-                profile_picture.appendChild(img);
-                str.innerHTML = " 2 ";
-                agi.innerHTML = " 4 ";
-                acc.innerHTML = " 6 ";
-                sta.innerHTML = " 3 ";
-                str_side.innerHTML = "Mid-range shot";
-            }
-            else if(x=='sf')
-            {
-                img.src = "img/lebronn.jpg";
-                profile_picture.appendChild(img);
-                str.innerHTML = " 2 ";
-                agi.innerHTML = " 6 ";
-                acc.innerHTML = " 3 ";
-                sta.innerHTML = " 4 ";
-                str_side.innerHTML = "Driving layups and dunks";   
-            }
-            else if(x=='pf')
-            {
-                img.src = "img/anthonyy.jpg";
-                profile_picture.appendChild(img);
-                str.innerHTML = " 7 ";
-                agi.innerHTML = " 2 ";
-                acc.innerHTML = " 3 ";
-                sta.innerHTML = " 3 ";
-                str_side.innerHTML = "Points in the paint";    
-            }
-            else if(x=='c')
-            {
-                img.src = "img/jokicc.jpg";
-                profile_picture.appendChild(img);
-                str.innerHTML = " 9 ";
-                agi.innerHTML = " 1 ";
-                acc.innerHTML = " 3 ";
-                sta.innerHTML = " 2 ";
-                str_side.innerHTML = "Blocks";       
-            }
-        }
-
-    </script>
+    <script src="js/register.js"></script>
 </HTML>

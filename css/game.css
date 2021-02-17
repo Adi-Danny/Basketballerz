@@ -1,20 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz');
-body
-{
-    background-image: url(img/background.jpg);
+
+body{
+    background-image: url(../img/background.jpg);
     background-attachment: fixed;
     font-family: 'Yanone Kaffeesatz', sans-serif; 
 }
 
-#container
-{
+#container{
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
 
-header
-{
+header{
     font-family: 'Permanent Marker', cursive;
     text-align: center;
     font-size: 50px;
@@ -28,15 +26,13 @@ header
     user-select: none;
 }
 
-header a
-{
+header a{
     color:white;
     text-decoration: none;
     cursor: pointer;
 }
 
-section
-{
+section{
     text-align: center;
     height: 730px;
     width: 796px;
@@ -48,13 +44,11 @@ section
     font-size: 20px;
 }
 
-p
-{
+p{
    padding: 20px;
 }
 
-aside
-{
+aside{
     height: 730px;
     width: 196px;
     float: left;
@@ -62,9 +56,8 @@ aside
     color:white;
 }
 
-footer
-{
-    padding:15px;
+footer{
+    padding: 15px;
     text-align: right;
     font-size: 20px;
     color:white;
@@ -74,19 +67,16 @@ footer
     border-bottom: 3px solid orange;
 }
 
-footer a:link 
-{
+footer a:link {
     text-decoration: none;
     color:white;
 }
 
-footer a:visited
-{
+footer a:visited{
     color:white;
 }
 
-#horizontal_menu
-{
+#horizontal_menu{
     text-align: center;
     height: 37px;
     width: 1000px;
@@ -94,8 +84,7 @@ footer a:visited
     color:white;
 }
 
-.horizontal_menu_option
-{
+.horizontal_menu_option{
     display: inline;
     min-width: 50px;
     font-size: 23px;
@@ -110,8 +99,7 @@ footer a:visited
     user-select: none;
 }
 
-.horizontal_menu_option:hover
-{
+.horizontal_menu_option:hover{
     color:orange;
     cursor: pointer;
     opacity: 70%;
@@ -119,8 +107,7 @@ footer a:visited
     text-shadow: 1px 1px grey;
 }
 
-.vertical_menu_option
-{
+.vertical_menu_option{
     font-size: 23px;
     height: 25px;
     padding: 20px;
@@ -135,8 +122,7 @@ footer a:visited
     user-select: none;
 }
 
-.vertical_menu_option:hover
-{
+.vertical_menu_option:hover{
     color: orange;
     cursor: pointer;
     opacity: 70%;
@@ -144,24 +130,20 @@ footer a:visited
     text-shadow: 1px 1px grey;
 }
 
-#logout_button
-{
+#logout_button{
     text-decoration: none;
     color:white;
 }
 
-#logout_button:hover
-{
+#logout_button:hover{
     color: orange;
 }
 
-#welcome
-{
+#welcome{
     font-size: 45px;
 }
 
-#character
-{
+#character{
     padding: 5px 20px;
     width: 250px;
     text-align: center;
@@ -171,46 +153,38 @@ footer a:visited
     display: none;
 }
 
-#character_photo
-{
+#character_photo{
     padding: 20px;
     text-align: center;
 }
 
-#clothes
-{
+#clothes{
     display:none;
 }
 
-#league
-{
+#league{
     display:none;
 }
 
-#team
-{
+#team{
     display:none;
 }
 
-#training
-{
+#training{
     display: none;
     height: 700px;
     overflow-y: scroll;
 }
 
-#training::-webkit-scrollbar
-{
+#training::-webkit-scrollbar{
     display: none;
 }
 
-#options
-{
+#options{
     display:none;
 }
 
-.experience_bar
-{
+.experience_bar{
     display: inline-block;
     right: 250px;
     position: relative;
@@ -222,8 +196,7 @@ footer a:visited
     border: 2px solid orange;
 }
 
-.experience_bar::before
-{
+.experience_bar::before{
     content: attr(data-label);
     display: flex;
     align-items: center;
@@ -239,8 +212,7 @@ footer a:visited
     padding: 1em;
 }
 
-#overall
-{
+#overall{
     display: block;
     position: relative;
     width: 55px;
@@ -251,8 +223,7 @@ footer a:visited
     text-align: center;
 }
 
-.item 
-{
+.item {
     background-color: black;
     border-radius: 1.5em;
     color:white;
@@ -262,63 +233,53 @@ footer a:visited
     margin: auto;
 }
 
-.item img
-{
+.item img{
     float: left;
     margin-left: 30px;
     border-radius: 1.5em;
 }
 
-.item b
-{
+.item b{
     color:orange;
 }
 
-#clothes
-{
+#clothes{
     overflow-y: scroll;
     height: 730px;
 }
 
-#clothes::-webkit-scrollbar
-{
+#clothes::-webkit-scrollbar{
     display: none;
 }
 
-#shop
-{
-    display: none;
-    overflow-y: scroll;
-    height: 730px;
-}
-
-#shop::-webkit-scrollbar
-{
-    display: none;
-}
-
-#ranking
-{
+#shop{
     display: none;
     overflow-y: scroll;
     height: 730px;
 }
 
-#ranking::-webkit-scrollbar
-{
+#shop::-webkit-scrollbar{
     display: none;
 }
 
-#league_logo
-{
+#ranking{
+    display: none;
+    overflow-y: scroll;
+    height: 730px;
+}
+
+#ranking::-webkit-scrollbar{
+    display: none;
+}
+
+#league_logo{
     font-family: 'Permanent Marker', cursive;
     text-align: center;
     font-size: 30px;
     color:white;
 }
 
-#coins_balance
-{
+#coins_balance{
     float: left;
     font-size: 25px;
     color: orange;
@@ -331,8 +292,7 @@ footer a:visited
     user-select: none;
 }
 
-.equip_button
-{
+.equip_button{
     background-color: black;
     border-radius: 1.5em;
     border: 2px solid orange;
@@ -349,14 +309,12 @@ footer a:visited
     user-select: none;
 }
 
-.equip_button:hover
-{
+.equip_button:hover{
     background-color: orange;
     color:black;
 }
 
-.options_button
-{
+.options_button{
     background-color: black;
     border-radius: 1.5em;
     border: 2px solid orange;
@@ -372,20 +330,17 @@ footer a:visited
     user-select: none;
 }
 
-.options_button:hover
-{
+.options_button:hover{
     background-color: orange;
     color:black;
 }
 
-#team_logo
-{
+#team_logo{
     padding: 30px;
     float: left;
 }
 
-#team_name
-{
+#team_name{
     font-weight: bold;
     font-style: italic;
 }

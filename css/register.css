@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body
 {
-    background-image: url(img/background.jpg);
+    background-image: url(../img/background.jpg);
     background-attachment: fixed;
     font-family: 'Yanone Kaffeesatz', sans-serif; 
 }
 
 #container
 {
-    width:1000px;
+    width:1600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -51,7 +53,13 @@ footer
     font-style: oblique;
 }
 
-input[type=text] 
+aside
+{
+    position: fixed;
+    float: left;
+}
+
+input
 {
     width: 250px;
     padding: 12px 20px;
@@ -59,31 +67,12 @@ input[type=text]
     box-sizing: border-box;
 }
 
-input[type=password]
-{
-    width: 250px;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-}
-
-input[type=text]:focus 
+input:focus 
 {
     background-color: lightblue;
 }
 
-input[type=password]:focus 
-{
-    background-color: lightblue;
-}
-
-input[type=text]::placeholder
-{
-    text-align: center;
-    font-style: italic;
-}
-
-input[type=password]::placeholder
+input::placeholder
 {
     text-align: center;
     font-style: italic;
@@ -124,22 +113,37 @@ footer a:link
     color:white;
 }
 
-footer a:visited
-{
+footer a:visited{
     color:white;
 }
 
-#about
+input[type=radio] 
 {
+    position: absolute;
+    visibility: hidden;
     display: none;
-    color:white;
-    margin: auto;
-    background-color:rgb(0, 0, 0,0.8);
-    border: 3px solid orange;
+}
+
+label 
+{
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 20px;
+}
+
+input[type=radio]:checked + label
+{
+    color:orange;
+}
+
+.radio_group 
+{
+    border: solid ;
+    display: inline-block;
     border-radius: 20px;
-    padding: 15px;
-    width: 500px;
-    font-size: 23px;
+    background-color: black;
+    font-size: 20px;
     -webkit-touch-callout: none; 
     -webkit-user-select: none; 
     -khtml-user-select: none; 
@@ -148,9 +152,62 @@ footer a:visited
     user-select: none;
 }
 
-button
+#radio_group_profile_picture 
 {
-    border: none;
+    border: solid ;
+    display: none;
+    border-radius: 20px;
+    background-color: black;
+    border: 2px solid white;
+    padding: 15px;
+    height: 299px;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
 }
 
+p.radioform
+{
+    font-size: 25px;
+    font-weight: bold;
+    color:white;
+    text-shadow: 0 0 3px red, 0 0 5px blue;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
 
+#profile_picture_text
+{
+    display: none;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+#character_stats
+{
+    background-color: black;
+    padding: 5px 20px;
+    width: 120px;
+    float: right;
+    text-align: center;
+    margin-top: 20px;
+    color:white;
+    font-size: 20px;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
