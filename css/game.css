@@ -17,7 +17,7 @@ header{
     text-align: center;
     font-size: 50px;
     height: 90px;
-    color:white;
+    color: white;
     -webkit-touch-callout: none; 
     -webkit-user-select: none; 
     -khtml-user-select: none; 
@@ -27,7 +27,7 @@ header{
 }
 
 header a{
-    color:white;
+    color: white;
     text-decoration: none;
     cursor: pointer;
 }
@@ -36,8 +36,8 @@ section{
     text-align: center;
     height: 730px;
     width: 796px;
-    color:white;
-    background-color:rgb(0, 0, 0,0.8);
+    color: white;
+    background-color: rgb(0, 0, 0,0.8);
     float: left;
     border: 3px solid orange;
     border-radius: 20px;
@@ -53,14 +53,14 @@ aside{
     width: 196px;
     float: left;
     border-radius: 20px;
-    color:white;
+    color: white;
 }
 
 footer{
     padding: 15px;
     text-align: right;
     font-size: 20px;
-    color:white;
+    color: white;
     font-style: oblique;
     border-radius: 20px;
     border-right: 3px solid orange;
@@ -69,11 +69,11 @@ footer{
 
 footer a:link {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 footer a:visited{
-    color:white;
+    color: white;
 }
 
 #horizontal_menu{
@@ -81,7 +81,7 @@ footer a:visited{
     height: 37px;
     width: 1000px;
     float: left;
-    color:white;
+    color: white;
 }
 
 .horizontal_menu_option{
@@ -100,7 +100,7 @@ footer a:visited{
 }
 
 .horizontal_menu_option:hover{
-    color:orange;
+    color: orange;
     cursor: pointer;
     opacity: 70%;
     border-radius: 20px;
@@ -132,7 +132,7 @@ footer a:visited{
 
 #logout_button{
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 #logout_button:hover{
@@ -147,7 +147,7 @@ footer a:visited{
     padding: 5px 20px;
     width: 250px;
     text-align: center;
-    color:white;
+    color: white;
     font-size: 20px;
     margin: auto;
     display: none;
@@ -159,15 +159,15 @@ footer a:visited{
 }
 
 #clothes{
-    display:none;
+    display: none;
 }
 
 #league{
-    display:none;
+    display: none;
 }
 
 #team{
-    display:none;
+    display: none;
 }
 
 #training{
@@ -181,7 +181,7 @@ footer a:visited{
 }
 
 #options{
-    display:none;
+    display: none;
 }
 
 .experience_bar{
@@ -192,7 +192,7 @@ footer a:visited{
     height: 3em;
     background-color: black;
     border-radius: 1.5em;
-    color:white;
+    color: white;
     border: 2px solid orange;
 }
 
@@ -226,7 +226,7 @@ footer a:visited{
 .item {
     background-color: black;
     border-radius: 1.5em;
-    color:white;
+    color: white;
     border: 2px solid orange;
     width: 640px;
     height: auto;
@@ -240,7 +240,7 @@ footer a:visited{
 }
 
 .item b{
-    color:orange;
+    color: orange;
 }
 
 #clothes{
@@ -276,7 +276,7 @@ footer a:visited{
     font-family: 'Permanent Marker', cursive;
     text-align: center;
     font-size: 30px;
-    color:white;
+    color: white;
 }
 
 #coins_balance{
@@ -311,7 +311,7 @@ footer a:visited{
 
 .equip_button:hover{
     background-color: orange;
-    color:black;
+    color: black;
 }
 
 .options_button{
@@ -332,7 +332,7 @@ footer a:visited{
 
 .options_button:hover{
     background-color: orange;
-    color:black;
+    color: black;
 }
 
 #team_logo{
