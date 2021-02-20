@@ -1,4 +1,3 @@
-$(document).ready(function(){
-    $("#about_button").click(function(){
-        $("#about").fadeToggle(1000);
-        })});
+function show_and_hide(){
+    document.getElementById("about").classList.toggle("show");
+}
