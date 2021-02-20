@@ -1,21 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz');
 
-body
-{
+body{
     background-image: url(../img/background.jpg);
     background-attachment: fixed;
     font-family: 'Yanone Kaffeesatz', sans-serif; 
 }
 
-#container
-{
+#container{
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
 
-header
-{
+header{
     font-family: 'Permanent Marker', cursive;
     text-align: center;
     font-size: 50px;
@@ -29,69 +26,59 @@ header
     user-select: none;
 }
 
-header a
-{
+header a{
     color:white;
     text-decoration: none;
     cursor: pointer;
 }
 
-section
-{
+section{
     text-align: center;
     height: 632px;
     margin-top: 60px;
     color:white;
 }
 
-footer
-{
+footer{
     text-align: center;
     font-size: 20px;
     color:white;
     font-style: oblique;
 }
 
-input[type=text] 
-{
+input[type=text]{
     width: 250px;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
 }
 
-input[type=password]
-{
+input[type=password]{
     width: 250px;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
 }
 
-input[type=text]:focus 
-{
+input[type=text]:focus{
     background-color: lightblue;
 }
 
-input[type=password]:focus 
-{
+input[type=password]:focus{
     background-color: lightblue;
 }
 
-input[type=text]::placeholder
-{
+input[type=text]::placeholder{
     text-align: center;
     font-style: italic;
 }
 
-input[type=password]::placeholder
-{
+input[type=password]::placeholder{
     text-align: center;
     font-style: italic;
 }
 
-.link_button 
-{
+.link_button{
     min-width: 50px;
     font-size: 23px;
     padding: 10px;
@@ -110,8 +97,7 @@ input[type=password]::placeholder
     user-select: none;
 }
 
-.link_button:hover
-{
+.link_button:hover{
     color:orange;
     cursor: pointer;
     opacity: 70%;
@@ -119,19 +105,16 @@ input[type=password]::placeholder
     text-shadow: 1px 1px grey;
 }
 
-footer a:link 
-{
+footer a:link{
     text-decoration: none;
     color:white;
 }
 
-footer a:visited
-{
+footer a:visited{
     color:white;
 }
 
-#about
-{
+#about{
     display: none;
     color:white;
     margin: auto;
@@ -149,7 +132,6 @@ footer a:visited
     user-select: none;
 }
 
-button
-{
+button{
     border: none;
 }
