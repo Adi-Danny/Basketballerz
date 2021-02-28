@@ -137,7 +137,7 @@ input[type=radio]:checked + label{
 
 #radio_group_profile_picture{
     border: solid ;
-    display: none;
+    display: inline-block;
     border-radius: 20px;
     background-color: black;
     border: 2px solid white;
@@ -165,7 +165,7 @@ p.radioform{
 }
 
 #profile_picture_text{
-    display: none;
+    display: inline;
     -webkit-touch-callout: none; 
     -webkit-user-select: none; 
     -khtml-user-select: none; 

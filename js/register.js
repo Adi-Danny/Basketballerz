@@ -1,19 +1,15 @@
-var img = document.createElement("img");
-img.style["border-radius"] = "20px";
-
 function show_position_info(position_clicked){
-    profile_picture = document.getElementById('radio_group_profile_picture');
-    profile_picture.style["display"] = "inline-block";
-    document.getElementById('profile_picture_text').style["display"] = "inline";
-
-    str = document.getElementById('strength');
-    agi = document.getElementById('agility');
-    acc = document.getElementById('accuracy');
-    sta = document.getElementById('stamina');
-    str_side = document.getElementById('strong_side');
+    img = document.getElementById("profile_picture");
+    profile_picture = document.getElementById("radio_group_profile_picture");
+    
+    str = document.getElementById("strength");
+    agi = document.getElementById("agility");
+    acc = document.getElementById("accuracy");
+    sta = document.getElementById("stamina");
+    str_side = document.getElementById("strong_side");
     
     switch (position_clicked){
-        case 'pg':
+        case "pg":
             img.src = "img/stephenn.jpg";
             profile_picture.appendChild(img);
             str.innerHTML = " 1 ";
@@ -23,7 +19,7 @@ function show_position_info(position_clicked){
             str_side.innerHTML = "3pt shot";
             break;
 
-        case 'sg':
+        case "sg":
             img.src = "img/hardenn.jpg";
             profile_picture.appendChild(img);
             str.innerHTML = " 2 ";
@@ -33,7 +29,7 @@ function show_position_info(position_clicked){
             str_side.innerHTML = "Mid-range shot";
             break;
 
-        case 'sf':
+        case "sf":
             img.src = "img/lebronn.jpg";
             profile_picture.appendChild(img);
             str.innerHTML = " 2 ";
@@ -43,7 +39,7 @@ function show_position_info(position_clicked){
             str_side.innerHTML = "Driving layups and dunks"; 
             break;
             
-        case 'pf':
+        case "pf":
             img.src = "img/anthonyy.jpg";
             profile_picture.appendChild(img);
             str.innerHTML = " 7 ";
@@ -53,7 +49,7 @@ function show_position_info(position_clicked){
             str_side.innerHTML = "Points in the paint"; 
             break;
 
-        case 'c':
+        case "c":
             img.src = "img/jokicc.jpg";
             profile_picture.appendChild(img);
             str.innerHTML = " 9 ";
@@ -63,9 +59,4 @@ function show_position_info(position_clicked){
             str_side.innerHTML = "Blocks";
             break;
     }
-}
-
-function clear_form(){
-    document.getElementById('radio_group_profile_picture').style.display='none';
-    document.getElementById('profile_picture_text').style.display='none';
 }
