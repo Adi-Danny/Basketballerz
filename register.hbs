@@ -18,7 +18,7 @@
                 <p class="radioform" id="profile_picture_text">Character picture: </p>
                     <form method="post">
                         <div id="radio_group_profile_picture">
-                            <img id="profile_picture" src="/img/stephenn.jpg" style="border-radius: 20px;" />
+                            <img id="profile_picture" src="../img/stephenn.jpg" style="border-radius: 20px;" />
                             <div id="character_stats">
                             <br /><b><i>Starting stats: </i></b><br /><br />
                             Strength: <span style="color: orange;" id="strength">1</span> / 100<br /> 
@@ -36,7 +36,7 @@
                     <input type="text" name="username" placeholder="Username" minlength="3" maxlength="20" required/><br />
                     <input type="password" name="password" placeholder="Password" minlength="6" maxlength="50" required/><br />
                     <input type="password" name="password_confirm" placeholder="Confirm password" minlength="6" maxlength="50" required/><br />
-                    <input type="text" name="e_mail" placeholder="E-mail" maxlength="50" required/><br />
+                    <input type="email" name="e_mail" placeholder="E-mail" maxlength="50" required/><br />
                     <input type="number" name="jersey_number" placeholder="Number on jersey (0-99)" min="0" max="99" required/><br /><br />
                     <p class="radioform">Position: </p>
                     <div class="radio_group">
@@ -45,13 +45,13 @@
                         <input type="radio" id="sf" name="position" value="sf" onclick="show_position_info('sf');"><label for="sf">Small Forward</label>
                         <input type="radio" id="pf" name="position" value="pf" onclick="show_position_info('pf');"><label for="pf">Power Forward</label>
                         <input type="radio" id="c" name="position" value="c" onclick="show_position_info('c');"><label for="c">Center</label>
-                    </div><br /><br /><br /><br /><br />
+                    </div><br /><br /><br /><br />
                     <button type="submit" class="link_button">Confirm</button>
                     <button type="reset" class="link_button" value="Clear" onclick="show_position_info('pg');">Clear form</button><br /><br />
-                    <a href="/" class="link_button">Back</a><br /><br /><br />
+                    <a href="/" class="link_button">Back</a><br /><br />
                 </form>
                 {{#if message}}
-                    <h4>{{message}}</h4>
+                <h4>{{message}}</h4>
                 {{/if}}
             </section>
             <footer>

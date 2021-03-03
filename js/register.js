@@ -10,7 +10,7 @@ function show_position_info(position_clicked){
     
     switch (position_clicked){
         case "pg":
-            img.src = "img/stephenn.jpg";
+            img.src = "/img/stephenn.jpg";
             profile_picture.appendChild(img);
             str.innerHTML = " 1 ";
             agi.innerHTML = " 6 ";
@@ -20,7 +20,7 @@ function show_position_info(position_clicked){
             break;
 
         case "sg":
-            img.src = "img/hardenn.jpg";
+            img.src = "/img/hardenn.jpg";
             profile_picture.appendChild(img);
             str.innerHTML = " 2 ";
             agi.innerHTML = " 4 ";
@@ -30,7 +30,7 @@ function show_position_info(position_clicked){
             break;
 
         case "sf":
-            img.src = "img/lebronn.jpg";
+            img.src = "/img/lebronn.jpg";
             profile_picture.appendChild(img);
             str.innerHTML = " 2 ";
             agi.innerHTML = " 6 ";
@@ -40,7 +40,7 @@ function show_position_info(position_clicked){
             break;
             
         case "pf":
-            img.src = "img/anthonyy.jpg";
+            img.src = "/img/anthonyy.jpg";
             profile_picture.appendChild(img);
             str.innerHTML = " 7 ";
             agi.innerHTML = " 2 ";
@@ -50,7 +50,7 @@ function show_position_info(position_clicked){
             break;
 
         case "c":
-            img.src = "img/jokicc.jpg";
+            img.src = "/img/jokicc.jpg";
             profile_picture.appendChild(img);
             str.innerHTML = " 9 ";
             agi.innerHTML = " 1 ";
