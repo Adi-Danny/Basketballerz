@@ -15,10 +15,13 @@
                 <h1>Basketballerz</h1>
             </header>
             <section>
-                <form method="post">
-                    <input type="text" name="username" placeholder="Username" /><br />
-                    <input type="password" name="password" placeholder="Password" /><br /><br />
-                    <a href="/game" class="link_button">Log in</a>
+                <form action="/auth/game" method="POST">
+                    <input type="text" id="username" name="username" placeholder="Username" minlength="3" maxlength="20"/><br />
+                    <input type="password" id="password" name="password" placeholder="Password" minlength="6" maxlength="50"/><br /><br />
+                    {{#if message}}
+                        <h4>{{message}}</h4>
+                    {{/if}}
+                    <button type="submit" class="link_button">Log in</button>
                     <a href="/register" class="link_button">Register</a><br /><br /><br />
                 </form>
                 <button id="about_button" onclick="show_and_hide()" class="link_button">About the game</button><br /><br /><br /><br />
@@ -29,5 +32,5 @@
             </footer>
         </div>
     </Body>
-    <script src="js/index.js"></script>
+    <script src="/js/index.js"></script>
 </HTML>
